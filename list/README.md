@@ -69,3 +69,19 @@ myReverse "A man, a plan, a canal, panama!" -- "!amanap ,lanac a ,nalp a ,nam A"
 
 myReverse [1,2,3,4]                         -- [4,3,2,1]
 ```
+
+## H99-6
+
+Find out whether a list is a palindrome. A palindrome can be read forward or backward.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+isPalindrome [1,2,3]              -- False
+
+isPalindrome "madamimadam"        -- True
+
+isPalindrome [1,2,4,8,16,8,4,2,1] -- True
+```
