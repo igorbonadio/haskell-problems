@@ -27,3 +27,17 @@ myButLast [1,2,3,4]     -- 3
 
 myButLast ['x','y','z'] -- 'y'
 ```
+
+## H99-3
+
+Find the K'th element of a list. The first element in the list is number 1.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+elementAt [1,2,3] 2   -- 2
+
+elementAt "haskell" 5 -- 'e'
+```
