@@ -55,3 +55,17 @@ myLength [123, 456, 789] -- 3
 
 myLength "Hello, world!" -- 13
 ```
+
+## H99-5
+
+Reverse a list.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+myReverse "A man, a plan, a canal, panama!" -- "!amanap ,lanac a ,nalp a ,nam A"
+
+myReverse [1,2,3,4]                         -- [4,3,2,1]
+```
