@@ -41,3 +41,17 @@ elementAt [1,2,3] 2   -- 2
 
 elementAt "haskell" 5 -- 'e'
 ```
+
+## H99-4
+
+Find the number of elements of a list.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+myLength [123, 456, 789] -- 3
+
+myLength "Hello, world!" -- 13
+```
