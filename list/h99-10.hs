@@ -1,7 +1,13 @@
-encode :: Eq(a) => [a] -> [(Int, a)]
-encode (x:xs) = encodeAux xs (1, x)
+pack :: Eq(a) => [a] -> [[a]]
+pack (x:xs) = packAux xs x [x]
   where
-    encodeAux [] e = [e]
-    encodeAux (x:xs) (n, y)
-      | x == y = encodeAux xs ((n+1), y)
-      | otherwise = (n, y) : encodeAux xs (1, x)
+    packAux [] _ p = [p]
+    packAux (x:xs) y p
+      | x == y = packAux xs y (y:p)
+      | otherwise = p : packAux xs x [x]
+
+encode :: Eq(a) => [a] -> [(Int, a)]
+encode xs = encodeAux (pack xs)
+  where
+    encodeAux [] = []
+    encodeAux (x:xs) = (length x, head x) : encodeAux (xs)
