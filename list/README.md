@@ -251,3 +251,17 @@ _Example_:
 ```haskell
 slice ['a','b','c','d','e','f','g','h','i','k'] 3 7 -- "cdefg"
 ```
+
+## H99-19
+
+Rotate a list N places to the left.
+
+_Level_: 2
+
+_Example_:
+
+```haskell
+rotate ['a','b','c','d','e','f','g','h'] 3    -- "defghabc"
+
+rotate ['a','b','c','d','e','f','g','h'] (-2) -- "ghabcdef"
+```
