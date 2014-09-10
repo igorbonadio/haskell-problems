@@ -289,3 +289,15 @@ _Example_:
 ```haskell
 insertAt 'X' "abcd" 2 -- "aXbcd"
 ```
+
+## H99-22
+
+Create a list containing all integers within a given range.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+range 4 9 -- [4,5,6,7,8,9]
+```
