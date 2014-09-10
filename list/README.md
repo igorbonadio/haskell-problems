@@ -105,3 +105,17 @@ flatten (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]]) -- [1,2,3,
 
 flatten (List [])                                                     -- []
 ```
+
+## H99-8
+
+Eliminate consecutive duplicates of list elements.
+
+If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
+
+_Level_: 2
+
+_Example_:
+
+```haskell
+compress "aaaabccaadeeee" -- "abcade"
+```
