@@ -277,3 +277,15 @@ _Example_:
 ```haskell
 removeAt 2 "abcd" -- ('b',"acd")
 ```
+
+## H99-21
+
+Insert an element at a given position into a list.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+insertAt 'X' "abcd" 2 -- "aXbcd"
+```
