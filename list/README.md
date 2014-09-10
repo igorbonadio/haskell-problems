@@ -187,3 +187,15 @@ _Example_:
 ```haskell
 encodeDirect "aaaabccaadeeee" -- [Multiple 4 'a',Single 'b',Multiple 2 'c', Multiple 2 'a',Single 'd',Multiple 4 'e']
 ```
+
+## H99-14
+
+Duplicate the elements of a list.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+dupli [1, 2, 3] -- [1,1,2,2,3,3]
+```
