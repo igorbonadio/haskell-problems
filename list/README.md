@@ -223,3 +223,17 @@ _Example_:
 ```haskell
 dropEvery "abcdefghik" 3 -- "abdeghk"
 ```
+
+## H99-17
+
+Split a list into two parts; the length of the first part is given.
+
+Do not use any predefined predicates.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+split "abcdefghik" 3 -- ("abc", "defghik")
+```
