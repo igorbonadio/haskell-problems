@@ -199,3 +199,15 @@ _Example_:
 ```haskell
 dupli [1, 2, 3] -- [1,1,2,2,3,3]
 ```
+
+## H99-15
+
+Replicate the elements of a list a given number of times.
+
+_Level_: 2
+
+_Example_:
+
+```haskell
+repli "abc" 3 -- "aaabbbccc"
+```
