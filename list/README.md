@@ -119,3 +119,16 @@ _Example_:
 ```haskell
 compress "aaaabccaadeeee" -- "abcade"
 ```
+
+## H99-9
+
+Pack consecutive duplicates of list elements into sublists. If a list contains repeated elements they should be placed in separate sublists.
+
+_Level_: 2
+
+_Example_:
+
+```haskell
+pack ['a', 'a', 'a', 'a', 'b', 'c', 'c',
+      'a', 'a', 'd', 'e', 'e', 'e', 'e'] -- ["aaaa","b","cc","aa","d","eeee"]
+```
