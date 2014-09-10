@@ -1,6 +1,6 @@
 # Haskell Problems
 
-It's a repository of programming problems and their solutions in Haskell.
+It's a repository of programming problems and my solutions in Haskell.
 
 ## H-99: Ninety-Nine Haskell Problems
 
