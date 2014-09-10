@@ -265,3 +265,15 @@ rotate ['a','b','c','d','e','f','g','h'] 3    -- "defghabc"
 
 rotate ['a','b','c','d','e','f','g','h'] (-2) -- "ghabcdef"
 ```
+
+## H99-20
+
+Remove the K'th element from a list.
+
+_Level_: 2
+
+_Example_:
+
+```haskell
+removeAt 2 "abcd" -- ('b',"acd")
+```
