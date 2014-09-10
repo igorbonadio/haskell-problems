@@ -211,3 +211,15 @@ _Example_:
 ```haskell
 repli "abc" 3 -- "aaabbbccc"
 ```
+
+## H99-16
+
+Drop every N'th element from a list.
+
+_Level_: 2
+
+_Example_:
+
+```haskell
+dropEvery "abcdefghik" 3 -- "abdeghk"
+```
