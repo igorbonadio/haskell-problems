@@ -333,7 +333,7 @@ group3 ["aldo","beat","carla","david","evi","flip","gary","hugo","ida"] -- [[["a
 
 b) Generalize the above predicate in a way that we can specify a list of group sizes and the predicate will return a list of groups.
 
-_Level_:
+_Level_: 3
 
 _Example_:
 
@@ -345,4 +345,3 @@ group [2,2,5] ["aldo","beat","carla","david","evi","flip","gary","hugo","ida"] -
 ```
 
 You may find more about this combinatorial problem in a good book on discrete mathematics under the term "multinomial coefficients".
-

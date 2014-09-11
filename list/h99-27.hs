@@ -6,17 +6,6 @@ combinations n xs = [y:ys | y:ys' <- tails xs
     tails [] = [[]]
     tails xs = xs : (tails (tail xs))
 
-removeElem :: Eq(a) => [a] -> a -> [a]
-removeElem [] _ = []
-removeElem (x:xs) e
-  | x == e = xs
-  | otherwise = x : removeElem xs e
-
-removeElems :: Eq(a) => [a] -> [a] -> [a]
-removeElems [] _ = []
-removeElems xs [] = xs
-removeElems xs (e:es) = removeElems (removeElem xs e) es
-
 nCombinations :: [Int] -> [a]  -> [[[a]]]
 nCombinations [] _ = []
 nCombinations (n:ns) xs = combinations n xs : nCombinations ns xs
@@ -35,3 +24,16 @@ group3 xs = [x: y : z : [] | x <- combinations 2 xs
                            , x `isDisjoint` z
                            , z `isDisjoint` y]
 
+group :: Eq(a) => [Int] -> [a] -> [[[a]]]
+group ns xs = groupAux comb
+  where
+    comb = nCombinations ns xs
+    groupAux [] = [[]]
+    groupAux (c:cs) = [y:ys | y <- c
+                            , ys <- groupAux cs
+                            , y `isDisjointAux` ys]
+    isDisjointAux :: Eq(a) => [a] -> [[a]] -> Bool
+    isDisjointAux _ [] = True
+    isDisjointAux xs (y:ys)
+      | isDisjoint xs y = isDisjointAux xs ys
+      | otherwise = False
