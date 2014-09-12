@@ -1,5 +1,5 @@
 isPrime :: Int -> Bool
-isPrime x = isPrimeAux x (x `div` 2)
+isPrime x = isPrimeAux x (floor . sqrt . fromIntegral $ x)
   where
     isPrimeAux x 1 = True
     isPrimeAux x y
