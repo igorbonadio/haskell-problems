@@ -14,6 +14,6 @@ frequence xs = frequenceAux xs xs
 
 lfsort :: [[a]] -> [[a]]
 lfsort [] = []
-lfsort ws = [y | (fy, y) <- xs, fy < fx] ++ [x] ++ [y | (fy, y) <- xs, fy >= fx]
+lfsort ws = (lfsort [y | (fy, y) <- xs, fy < fx]) ++ [x] ++ (lfsort [y | (fy, y) <- xs, fy >= fx])
   where
     (fx, x):xs = frequence ws
