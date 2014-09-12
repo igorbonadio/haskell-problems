@@ -65,3 +65,17 @@ _Example_:
 ```haskell
 primeFactors 315 -- [3, 5, 7]
 ```
+
+## H99-36
+
+Determine the prime factors of a given positive integer.
+
+Construct a list containing the prime factors and their multiplicity.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+primeFactorsMult 315 -- [(3,2),(5,1),(7,1)]
+```
