@@ -53,3 +53,15 @@ _Example_:
 ```haskell
 totient 10 -- 4
 ```
+
+## H99-35
+
+Determine the prime factors of a given positive integer. Construct a flat list containing the prime factors in ascending order.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+primeFactors 315 -- [3, 5, 7]
+```
