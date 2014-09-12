@@ -8,3 +8,6 @@ totient n = totientAux n n
     totientAux n x
       | coprime n x = 1 + totientAux n (x - 1)
       | otherwise = totientAux n (x - 1)
+
+totient' :: Int -> Int
+totient' n = length $ filter (coprime n) [1..n-1]
