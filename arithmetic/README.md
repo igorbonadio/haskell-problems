@@ -101,3 +101,17 @@ _Example_:
 ```haskell
 totient 10 -- 4
 ```
+
+## H99-39
+
+A list of prime numbers.
+
+Given a range of integers by its lower and upper limit, construct a list of all prime numbers in that range.
+
+_Level_: 1
+
+_Example_:
+
+```haskell
+primesR 10 20 -- [11,13,17,19]
+```
